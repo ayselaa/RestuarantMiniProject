@@ -1,0 +1,46 @@
+
+  .container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+
+  .heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+  }
+  
+  .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  
+  .list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .list-item ion-icon{
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+  }
+
+  @media (max-width: 44em){
+    .diets{
+  grid-column: 1 /-1;
+  justify-self: center;
+    }
+  }
+
+
+
+  

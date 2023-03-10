@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+.body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: rgb(60, 57, 57);
+}
+
+html {
+  /* font-size:10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* responsivlikde burdanfaizi azaldaraq butun herfleri kiciltmek olar:  */
+  /* sehifede butun font sizler burdan deyisdirilir */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  outline: none;
+
+}
+
+@media (max-width: 75em) {
+  /* 75em 1202px dir. px-li rem'e cevirmek ucun 1202 / 16 = 75.125 */
+  html {
+    /* font-size: 9px;
+    buarada 9px /16px = 0.5625 = 56.25% */
+    font-size: 56.25%;
+
+  }
+}
+
+@media (max-width: 59em) {
+  /* 59em 944px dir*/
+  html {
+    /* font-size: 8px;
+    buarada 8px / 16px = 0.5625 = 56.25% */
+    font-size: 50%;
+  }
+}

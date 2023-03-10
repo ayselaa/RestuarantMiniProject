@@ -1,0 +1,68 @@
+.container {
+  max-width: 120rem;
+  padding: 0 4.6rem;
+  margin: 0 auto;
+}
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #eb984e;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(11, 11, 11, 0.075);
+  overflow: hidden;
+}
+
+.cta-img-box {
+  background-image: url("../../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+  color: #45260a;
+}
+
+.cta-text-box {
+  padding: 3rem 6rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 2.6rem;
+  margin-top: 2.6rem;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 75em) {
+  .heading-secondary {
+    font-size: 3.4rem;
+    margin-bottom: 1.6rem;
+    margin-top: 3.6rem;
+  }
+}
+@media (max-width: 59em) {
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+@media (max-width: 34em) {
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 36rem;
+  }
+}

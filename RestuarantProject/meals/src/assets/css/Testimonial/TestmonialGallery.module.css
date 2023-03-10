@@ -1,0 +1,54 @@
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 1s;
+  border-radius: 5px;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* (1rem = 16px) 1344px-lik ekrani reme cevirmek ucun 1344 bolek 16 -ya  */
+/* 1 rem = 1 em eyni olcu vahidleridi sadece media querylerde em daha cox istifade olunur */
+
+@media (max-width: 84em) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 59em) {
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,22 @@
+.btn:link,
+.btn:visited {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  margin-right: 1rem;
+  border-radius: 9px;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.btn1:hover {
+  background-color: #b1621d;
+  color: white;
+  transform: scale(0.7);
+  transition: all 1s;
+}
+
+.btn1 {
+  background: #e67e22;
+}
